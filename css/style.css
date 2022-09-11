@@ -1,49 +1,154 @@
-/*
-a.	cor de fundo da tag body em modo RGB valores (223, 215, 185)
-b.	cor do texto da tag body em modo RGB valores (51, 51, 51)
-c.	cor do texto da tag h1 em modo hexadecimal, valor #0d1b97
-d.	cor de fundo da classe job-title em modo hexadecimal, valor #1726ad
-e.	cor do texto da classe job-title em modo hexadecimal, valor #898dbe
-f.	cor do texto do identificador high em modo RGB, valores (13, 27, 151)
-g.	cor de fundo da tag ul em modo hexadecimal, valor 333333
-h.	cor do texto da tag ul em modo RGB, valores (223, 215, 185)
-
-7.	configure as fontes adicionando a regra font-family: Arial, Helvetica, sans-serif;  à tag body e a regra font-family: Georgia, 'Times New Roman', Times, serif; à tag h1.
-8.	configure a propriedade font-size aplicando os valores 40px à tag h1, 20px à tag h2 e 20px à classe job-title.
-9.	adicione a regra font-weight: bold; à classe job-title , certificando-se de observar o seu efeito.
-10.	adicione a regra padding: 5px 10px 5px 10px; à classe job-title e a regra padding: 10px; à tag ul , certificando-se de observar o seu efeito.
-
-*/
-
-body { 
-    background-color: rgb(223, 215, 185);
-    color : rgb(51, 51, 51);
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    font-family: 'Roboto', sans-serif;
 }
-
-h1 {
-    color: #0d1b97;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+.desconto {
+  height: 23px;
+  width: 100%;
+  background: #1CD1B0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0px 0px 0px 40px; 
 }
-
-h2 {
-      font-size: 20px;
+header {
+  width: 100%;
+  height: 88px;
+  background: #00669F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 23px;
+  display: flex; 
+  align-items: center;
+  padding: 0px 0px 0px 10px; 
 }
-
-.job-title{
-    background-color: #1726ad;
-    color: #898dbe;
-    font-size: 20px;
+header h1 {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 400;
+  color: white;
+  font-style: normal;
+  padding: 0px 0px 0px 30px;
+}
+.menu {
+  position: sticky;
+  width: 100%;
+  height: 40px;
+  background: #001D2D;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 108px;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  z-index: 1;
+  top: 0px;
+  color: white;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+nav li{
+    padding: 0px 20px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.card{
+    background-color: #F3F3F3;
+    width: 350px;
+    height: 500px;
+    box-shadow: 0px 4px 4px 0px;
+}
+.batman{
+    background-image: url(../img/batcaverna.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+.arlequina{
+    background-image: url(../img/explosao.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+.heart{
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
+.hero{
+    position: absolute;
+    top: 60%;
+    left: 32%;
+    border-radius: 50%;
+}
+.descHeroi{
+    padding: 20px;
+    text-align: justify;
+}
+.descHeroi h3{
+    text-align: center;
+}
+.descHeroi p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #333;
+}
+.descHeroi button{
+    background-color: #00669f;
+    padding: 17px 35px;
+    color: #f3f3f3;
+    border: none;
+    margin-top: 20px;
+}
+.botao{
+    border: none;
+    text-align: center;
+}
+footer{
+    background-color: #00669F;
+    color: white;
+    font-weight: 400;
+    height: 61px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adicionar button{
+    background-color: #00669F;
+    color: white;
     font-weight: bold;
-    padding: 5px 10px 5px 10px;
+    font-size: 3rem;
+    border: none;
+    border-radius: 50%;
+    height: 82px;
+    width: 82px;
+    position: absolute;
+    left: 93%;
+    top: 70%;
 }
- #high {
-      color: rgb(13, 27, 151);
+a:link, a:visited{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
-
-ul {
-    background-color: #333333;
-    color: rgb(223, 215, 185);
-    padding: 10px;
-}  
+a:hover{
+    font-size: 4rem;
+}
+a:active{
+    font-size: 3rem;
+    color:yellow
+}

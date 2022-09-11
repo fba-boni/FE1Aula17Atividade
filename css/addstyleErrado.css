@@ -1,0 +1,87 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.titulo{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+header{
+    text-align: center;    
+}
+footer{
+    background-color: #00669F;
+    color: white;
+    font-weight: 400;
+    height: 61px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.barraDesconto{
+    background-color: #1CD1B0;
+    color: #000000;
+    font-size: 15px;
+    height: 23px;
+    font-weight: 400;
+    padding: 0px 0px 0px 20px;
+}
+header{
+    background-color: #00669F;
+    height: 80px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header h1{
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 20px;
+}
+.menu{
+    background-color: #001D2D;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu li{
+    color: #FFFFFF;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;   
+    padding: 0px 20px;
+}
+.formulario{
+    background-color: #00669F;
+    border-radius: 25px;
+    width: 60%;
+    height: 832px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 380px;
+    padding: 10px;
+    color: white;
+}
+.lado1 .lado2{
+    width: 50%;
+}
+
+.label{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.formText{
+    width: 302px;
+    height: 50px;
+    border-radius: 12px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+}

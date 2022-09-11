@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/addstyle.css">
+    <title>Front End I - Aula 17</title>
+</head>
+<body>
+    <div class="desconto">
+        20% de desconto em todos os produtos!
+    </div>
+    <header>
+        <img src="img/LogoLoja.png" alt="Logo" class="logo">
+        <h1>Loja Front End I</h1>
+    </header>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li>Contato</li>
+                <li>Registar-me</li>
+                <li>Ingressar</li>
+            </ul>
+        </nav>
+    </div>
+    <main class="principal">
+        <div class="container">
+            <h2>Adicionar seu super-herói</h2>
+            <p>Adicione seu personagem favorito completando as informações</p>
+            
+            <form action="" method="post" class="formulario">
+                <label for="nome" class="title">*Nome</label>
+                <input type="text" class="input-page" name="nome" required id="nome">
+
+                <label for="nascimento" class="title">Data de Nascimento</label>
+                <input type="date" class="input-page" value="2022-09-10" min="2022-09-10" max="2022-12-31" name="nascimento" id="nascimento" required>
+
+                <textarea name="description" placeholder="Descrição" id="description" cols="30" rows="10"></textarea>
+                
+                <label for="especie" class="title">*Espécie</label>
+
+                <select name="especie" class="input-page" id="especie">
+                    <option value="Humano" selected>Humano</option>
+                    <option value="Alienigena">Alienigena</option>
+                    <option value="Lord Demonio">Lord Demonio</option>
+                    <option value="Deus">Deus</option>
+                </select>
+
+                <label for="file" class="title">Adicionar Foto</label>
+                <input type="file" class="arquivo" value="file" id="file"><br><br><br>
+
+                <fieldset class="poder">
+                    <legend>Poderes:</legend>
+                    
+                    <label for="voar">
+                        <input type="checkbox" name="voar"> Voar
+                    </label><br><br>
+                    
+                    <label for="Super Inteligência">
+                        <input type="checkbox" name="Super Inteligência"> Super Inteligência
+                    </label><br><br>
+                    
+                    <label for="Visão de Raio Laser">
+                        <input type="checkbox" name="Visão de Raio Laser"> Visão de Raio Laser
+                    </label><br><br>
+                    
+                    <label for="Super Rico">
+                        <input type="checkbox" name="Super Rico"> Super Rico
+                    </label><br>
+                </fieldset>
+                <br>
+                <fieldset class="tipopersonagem">
+                    <legend>Tipo de Personagem:</legend>
+
+                    <label for="heróiheroína">
+                        <input type="radio" name="heróiheroína" value="herói/heroína" checked>Herói/Heroína
+                    </label><br><br>
+                    
+                    <label for="vilãovilã">
+                        <input type="radio" name="vilãovilã" value="vilão/vilã">Vilão/Vilã
+                    </label><br>
+                </fieldset>
+            </form>
+            <button>Adicionar</button>
+        </div>
+    </main>
+    <footer>
+        Todos os direitos reservados a Front End I
+    </footer>
+</body>
+</html>

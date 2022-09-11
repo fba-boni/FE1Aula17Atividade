@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/addstyle.css">
+    <title>Front End I - Aula 17 - add.html</title>
+  </head>
+  <body>
+    <div class="barraDesconto">20% de desconto em todos os produtos!</div>
+    <header>
+      <div><img src="img/LogoLoja.jpg" alt="Loja" /></div>
+      <div><h1>Lojinha Front End I</h1></div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li>Contato</li>
+            <li>Registrar-se</li>
+            <li>Login</li>
+        </ul>
+    </nav>
+    <div class="formulario">
+      <h1 class="titulo">Adicionar seu super-herói</h1>
+      <p class="titulo">Adicione seu personagem favorito completando as informações</p>
+
+      
+      <form action="/adicionar" method="post">
+        <div class="Lado1">          
+          <label class="Label" for="nome">*Nome:</label><br>
+          <input class=".formText" type="text" name="nome" id="nome"><br>
+
+          <label for="nascimento">*Data de nascimento:</label><br>
+          <input
+            type="date"
+            name="nascimento"
+            id="nascimento"
+            value="2022-09-10"
+            min="2022-09-10"
+            max="2022-12-31"/>
+          
+          <br>
+          <textarea name="descricao" id="descricao" cols="30" rows="10">
+            Descrição
+          </textarea>
+        </div>
+        <div class="Lado2">
+          <label for="especie">*Espécie:</label><br>
+          <select name="especie" id="especie">
+            <option value="alienigena">Alienigena</option>
+            <option value="humana" selected>Humana</option>
+            <option value="bestial">Bestial</option>
+            <option value="angelical">Angelical</option>
+            <option value="demoniaca">Demoniaca</option>
+          </select>
+          
+          <br>
+          <label for="foto">Adicionar Foto:</label>
+          <input type="file" name="foto" id="foto" />
+          <br>
+          <fieldset>
+            <legend>Poderes:</legend>
+            <input type="checkbox" name="voar" value="voar">Voar
+            <br>
+            <input type="checkbox" name="super inteligência" value="super inteligência">Super Inteligência<br>
+            <input type="checkbox" name="visão de raio laser" value="visão de raio laser">Visão de raio laser<br>
+            <input type="checkbox" name="super rico" value="super rico">Super Rico<br/>
+          </fieldset>
+          <br>
+          <hr>
+          <br>
+          <fieldset>
+            <legend>Tipo de Personagem:</legend>
+            <input type="radio" name="heroiheroina" value="herói/heroína" checked>Herói/Heroína<br>
+            <input type="radio" name="vilaovila" value="vilão/vilã">Vilão / Vilã<br>
+          </fieldset>
+        </div>
+        <br>
+        <button type="submit">Adicionar</button>
+      </form>
+    </div>
+
+    <footer>Todos os direitos reservados a FRONT END 1</footer>
+  </body>
+</html>

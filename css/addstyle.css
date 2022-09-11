@@ -1,0 +1,166 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.desconto {
+  height: 23px;
+  width: 100%;
+  background: #1CD1B0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0px 0px 0px 40px; 
+}
+header {
+  width: 100%;
+  height: 88px;
+  background: #00669F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 23px;
+  display: flex; 
+  align-items: center;
+  padding: 0px 0px 0px 10px; 
+}
+header h1 {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 400;
+  color: white;
+  font-style: normal;
+  padding: 0px 0px 0px 30px;
+}
+.menu {
+  position: sticky;
+  width: 100%;
+  height: 40px;
+  background: #001D2D;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 108px;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  z-index: 1;
+  top: 0px;
+  color: white;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+nav li{
+    padding: 0px 20px;
+}
+main .principal{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.container {
+  width: 954px;
+  height: 832px;
+  margin: 30px auto;
+  background: #00669F;
+  border-radius: 50px;
+  color: white;
+}
+.container h2, p{
+    text-align: center;
+}
+
+.container h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 10px 0px 0px 0px;
+}
+.container p{
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-top: 10px;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  justify-content: space-between;
+  max-width: 708px;
+  max-height: 600px;
+  margin: 30px auto 0;
+  color: white;
+}
+.formulario input, textarea, label, select {
+  max-width: 300px;
+  border: none;
+}
+.title {
+  font-size: 1.25rem;
+  display: block;
+  margin: 20px 0;
+}
+.input-page {
+  height: 68px;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  padding: 20px 10px;
+}
+.formulario textarea {
+  padding: 20px 10px;
+  font-size: 15px;
+  font-weight: 300px;
+  margin-top: 30px;
+  height: 270px;
+  border-radius: 15px;
+}
+.input-page #especie {
+  margin: 10px;
+}
+input[type="file"]::-webkit-file-upload-button{
+  background: #CECECE;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  width: 150px;
+  text-align: left;
+  margin-top: 15px;
+}
+.poder{
+    padding: 10px;
+    border: none;
+    border-bottom: solid 1px #CCCCCC;
+}
+.tipopersonagem{
+    padding: 10px;
+    border: none;
+}
+
+button{
+    background: #1CD1B0;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 23px;
+    width: 466px;
+    height: 87px;
+    margin: 40px auto 0;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+}
+footer{
+    background-color: #00669F;
+    color: white;
+    font-weight: 400;
+    height: 61px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
